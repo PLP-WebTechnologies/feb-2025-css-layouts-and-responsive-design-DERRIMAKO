@@ -1,0 +1,162 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Navigation Bar Styling */
+  header {
+    background-color: #333;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    color: #ff6347;
+  }
+  
+  /* Main Content Section Styling */
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin: 20px 0;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  /* Flexbox Layout for Services */
+  .services-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .service {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .service p {
+    font-size: 16px;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+  
+  footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin: 0 10px;
+  }
+  
+  footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  footer ul li a:hover {
+    color: #ff6347;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Mobile: Stack content vertically */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .services-container {
+      flex-direction: column;
+    }
+  
+    .service {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Tablet: Adjust services layout */
+  @media (max-width: 768px) {
+    .services-container {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .service {
+      width: 45%;
+    }
+  }
+  
+  /* Desktop: Keep services in row */
+  @media (min-width: 1024px) {
+    .services-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .service {
+      width: 30%;
+    }
+  }
+  
